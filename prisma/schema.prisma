@@ -33,7 +33,7 @@ model Course {
 
   @@index([categoryId])
   // This makes our courses title searchable
-  @@fulltext([title])
+  @@index([title])
 }
 
 model Category {
